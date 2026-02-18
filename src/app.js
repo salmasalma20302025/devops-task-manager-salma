@@ -3,10 +3,8 @@ const app = express();
 app.use(express.json());
 
 let tasks = [
-  { id: 1, title: "Initial task", completed: true },
-  { id: 2, title: "Install Git and Node.js", "completed": true },
-  { id: 2, title: "Learn DevOps basics", completed: false }
-  
+  { id: 1, title: "DevOps Lab Task", completed: true },
+  { id: 2, title: "Practice Git Branching", completed: false }
 ];
 
 app.get('/', (req, res) => {
