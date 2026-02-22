@@ -3,12 +3,14 @@ const app = express();
 app.use(express.json());
 
 let tasks = [
-  { id: 1, title: "DevOps Lab Task", completed: true },
-  { id: 2, title: "Practice Git Branching", completed: false }
+  { id: 1, title: "Initial task", completed: true },
+  { id: 2, title: "Install Git and Node.js", "completed": true },
+  { id: 2, title: "Learn DevOps basics", completed: false }
+  
 ];
 
 app.get('/', (req, res) => {
-  res.json({ message: "DevOps Task Manager API is running (Lab 1)" });
+  res.json({ message: "Welcome from MAIN branch" });
 });
 
 app.get('/tasks', (req, res) => {
