@@ -8,7 +8,7 @@ let tasks = [
 ];
 
 app.get('/', (req, res) => {
- res.json({ message: "Welcome from FEATURE branch" });
+ res.json({ message: "Welcome from FEATURE branch v2" });
 });
 
 app.get('/tasks', (req, res) => {
